@@ -5,7 +5,7 @@
 
 <%
     StringBuilder result = new StringBuilder();
-    URL url = new URL("http://localhost:3030/main");
+    URL url = new URL("http://localhost:3030/hoopla-common");
     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
     conn.setRequestMethod("GET");
     BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
